@@ -1,0 +1,86 @@
+@import 'vars'
+
+nav 
+	background rgba(255,0,0,0.85)
+	z-index 1
+
+.mob-nav
+	padding 1em 2em
+	position fixed
+	bottom 0
+	left 0
+	right 0
+	background rgba(255,0,0,0.85)
+
+
+a
+	text-decoration none
+	color white
+	font-size 2em
+	margin 0
+
+p 
+	margin 0
+	
+#navigation
+	position fixed
+	bottom 50px
+	width 100%
+
+.mob-menu
+	background rgba(255,0,0,0.85)
+	padding 1em 0
+	
+	&.hide
+		display none
+
+.mob-menu a 
+	font-size 1em
+
+.mob-menu-item
+	margin .5em 1em
+	background rgba(127, 0, 0, 0.5)
+	font-color white
+	border-radius 5px
+
+.mob-menu-item p
+	color white
+	text-align right
+	font-size 1em
+	padding .5em .5em
+	
+	
+@media (min-width: breakpoint-mobile)
+
+	// #menu-icon-wrapper
+	// 	display none
+		
+	.mob-menu
+		display block
+
+	
+@media (min-width: breakpoint-desktop)
+
+	.menu-item 
+		color white
+		padding .5em 2em 
+		margin 0
+		position relative
+		
+	#menu p
+		font-size .8em
+	
+	#logo a
+		font-size 3em
+		
+	.mob-nav
+		margin 0.5em 1em
+		
+	
+		
+
+	
+	
+
+	
+	

@@ -1,0 +1,59 @@
+@import 'home-content'
+@import 'vars'
+@import 'nav'
+@import 'stage'
+@import 'visualize'
+@import 'header'
+@import 'learn'
+@import 'map'
+
+* 
+	box-sizing border-box
+	outline 0 !important
+	
+	
+body
+	margin 0
+	font-family: 'Oxygen', sans-serif;
+	background rgb(255,255,250)
+	line-height 1.5em
+	
+
+
+.container
+	max-width 90em
+	margin 0 auto
+	
+h1
+	font-size 1.5em
+	
+
+@media (min-width: breakpoint-desktop)
+
+	body
+		display flex
+		flex-direction column
+
+	#navigation
+		order -1
+			
+	#ninja-slider
+		order 2
+		
+	#pages
+		order 3
+	
+	.header-img
+		order 4
+		
+	.mob-nav
+		position static
+		
+	#navigation
+		position static
+	
+	h1
+		font-size 2.5em
+	
+
+	

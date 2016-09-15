@@ -1,0 +1,51 @@
+@import 'vars'
+
+.header-img
+	height 250px
+	width 100%
+
+header 
+	position relative
+
+header .caption
+	font-size 4em
+	
+.caption
+	display flex
+	justify-content center
+	align-items center
+	position absolute
+	top 0
+	left 0
+	height 100%
+	width 100%
+	text-align center
+	font-size 3em
+	font-style italic
+	color rgba(255,255,255,1)
+	-webkit-text-stroke .5px rgba(255,0,0,0.8)
+	font-family: 'Baloo Paaji', cursive;
+	
+@media (min-width: breakpoint-tablet)	
+
+	.header-img
+		height 400px
+		
+	header .caption
+		font-size 6em
+
+@media (min-width: breakpoint-desktop)	
+
+	.header-img
+		height 500px
+		
+	header .caption
+		font-size 8em
+
+@media (min-width: breakpoint-xl)	
+	
+	.header-img
+		height 700px
+	
+	header .caption
+		font-size 12em

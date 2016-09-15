@@ -1,0 +1,119 @@
+@import 'vars'
+
+#pages .contain
+	display flex
+	flex-direction column
+	
+.page
+	margin 1em 1em 0em 1em
+	position relative
+	
+.page img
+	width 100%
+	height 150px
+	object-fit cover
+	
+section
+	margin-bottom 5em
+	
+.page .caption
+	display flex
+	justify-content center
+	align-items center
+	position absolute
+	top 0
+	left 0
+	height 100%
+	width 100%
+	text-align center
+		
+	// position absolute
+	// margin auto
+	// top 0
+	// left 0
+	// bottom 0
+	// right 0
+		
+
+	font-size 3em
+	font-style italic
+	color white
+	font-family: 'Baloo Paaji', cursive;
+	
+.page a
+	font-size .5em
+	
+@media (min-width: breakpoint-tablet) 
+	
+	#pages .contain
+		flex-direction row
+		flex-wrap wrap
+	
+
+	.page 
+		width 50%
+		padding 1em 1em 0.5em 1em
+		margin 0
+		
+	.page img
+		height 250px
+	
+	.page a 
+		font-size 1.5em
+	
+	.page .caption
+		font-size 1.5em
+	
+
+@media (min-width: breakpoint-desktop) 
+
+	.page 
+		width 50%
+
+	.page img
+		height 400px
+		
+	#pages
+		margin-bottom 1em
+		
+	.page a
+		font-size 1.8em
+		
+	.page .caption
+		font-size 2.5em
+		
+	/*-----------------*/
+/***** Steve *****/
+/*-----------------*/
+
+
+	
+
+	.effect-steve img {
+		opacity: 1;
+		-webkit-transition: -webkit-transform 0.35s;
+		transition: transform 0.35s;
+		-webkit-transform: perspective(1000px) translate3d(0,0,0);
+		transform: perspective(1000px) translate3d(0,0,0);
+	}
+
+	.effect-steve:hover img {
+		-webkit-transform: perspective(1000px) translate3d(0,0,21px);
+		transform: perspective(1000px) translate3d(0,0,40px);
+	}
+
+@media (min-width: breakpoint-xl)
+
+	.page
+		width 25%
+	
+	.page img
+		width 100%
+		height 400px
+		object-fit cover
+		
+	.page a
+		font-size 2.2em
+	
+	.page .caption
+		font-size 1.5em
