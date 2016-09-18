@@ -12,8 +12,6 @@ var order = require('gulp-order')
 var addsrc = require('gulp-add-src')
 var concat = require('gulp-concat')
 var uglify = require('gulp-uglify')
-// var babel = require('gulp-babel')
-// var filelog = require('gulp-filelog')
 
 var paths = {
 	css: {
@@ -28,8 +26,6 @@ var paths = {
 		files: [
 			'bower_components/jquery/dist/jquery.js',
 			'bower_components/d3/d3.js',
-			'assets/js/ninja-slider.js',
-			// 'assets/js/segment.min.js',
 			'assets/js/nav.js',
 			'assets/js/main.js',
 			'assets/js/ease.min.js',
@@ -62,10 +58,6 @@ gulp.task('css', function() {
 
 gulp.task('js', function() {
 	var stream = gulp.src(paths.js.files)
-		// .pipe(babel({presets:['es2015']}))
-		// .pipe(addsrc(paths.js.files))
-		// .pipe(order(['jquery.min.js', 'd3.min.js', '*.js']))
-		// .pipe(filelog())
 		.pipe(concat('script.js'))
 		.pipe(gulp.dest(paths.output))
 		.pipe(uglify())
