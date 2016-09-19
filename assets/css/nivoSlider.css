@@ -1,0 +1,112 @@
+/*
+ * jQuery Nivo Slider v3.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:250px;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:white; 
+	filter:alpha(opacity=0); 
+	opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:none;}
+
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	display: none;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	display: none;
+}
+
+@media (min-width: 48em){
+	.nivoSlider {
+		position:relative;
+		width:100%;
+		height:400px;
+		overflow: hidden;
+	}
+	.nivoSlider img {
+		position:absolute;
+		top:0px;
+		left:0px;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}	
+
+@media (min-width: 64em){
+	.nivoSlider {
+		position:relative;
+		width:100%;
+		height:500px;
+		overflow: hidden;
+	}
+	.nivoSlider img {
+		position:absolute;
+		top:0px;
+		left:0px;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}	
+
+@media (min-width: 90em){
+	.nivoSlider {
+		position:relative;
+		width:100%;
+		height:700px;
+		overflow: hidden;
+	}
+	.nivoSlider img {
+		position:absolute;
+		top:0px;
+		left:0px;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

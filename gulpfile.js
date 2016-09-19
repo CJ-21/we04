@@ -28,6 +28,7 @@ var paths = {
 			'bower_components/d3/d3.js',
 			'assets/js/nav.js',
 			'assets/js/main.js',
+			'assets/js/nivo.js',
 			'assets/js/ease.min.js',
 			'assets/js/modernizr.custom.js'
 		]
