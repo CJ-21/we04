@@ -40,12 +40,10 @@ canvas.addEventListener('mousemove', draw)
 canvas.addEventListener('touchmove', draw)
 
 function draw(event){
-
-	// where was our mouse last frame
+	
 	mouse.ox = mouse.x
 	mouse.oy = mouse.y
 
-	// where is our mouse now
 if(event.touches){
 	mouse.x = event.touches[0].pageX - canvas.offsetLeft
 	mouse.y = event.touches[0].pageY - canvas.offsetTop
@@ -70,32 +68,19 @@ if(event.touches){
 		xVel: (mouse.x - mouse.ox) / 10,
 		yVel: (mouse.y - mouse.oy) / 10
 	})
-
-	// //draw a circle
-	// ctx.beginPath()
-	// ctx.arc(event.clientX-10, event.clientY-10, size, 0, 2 * Math.PI, false)
-	// ctx.fillStyle = color
-	// ctx.fill()
 }
 
 setInterval(function(){
 
-	// wipe the canvas - cool effect if you hide this
-	// ctx.clearRect(0, 0, canvas.width, canvas.height)
-
 	ctx.fillStyle = 'rgba(255, 255, 255, 0.1)'
 	ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-
-	// for each dot
 	dots.forEach(function(dot){
 
-		// move it
 		dot.yVel += dot.gravity
 		dot.y += dot.yVel
 		dot.x += dot.xVel
 
-		// drawy it
 		ctx.beginPath()
 		ctx.arc(dot.x, dot.y, dot.size, 0, 2 * Math.PI, false)
 		ctx.fillStyle = dot.color
