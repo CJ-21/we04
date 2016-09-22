@@ -2,7 +2,7 @@ $(function(){
 		$('#slider').nivoSlider({
 			effect: 'fade',
 			manualAdvance: false,
-			pauseTime: 3000,
-			animSpeed: 200,
+			pauseTime: 2500,
+			animSpeed: 2000,
 		});
 	})
